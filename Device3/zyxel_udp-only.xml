@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.93 scan initiated Sat May 11 19:31:49 2024 as: nmap -p 1-65535 -T5 -sU -sV -&#45;version-all -O -&#45;osscan-guess -oX zyxel_udp-only.xml 192.168.10.1 -->
+<nmaprun scanner="nmap" args="nmap -p 1-65535 -T5 -sU -sV -&#45;version-all -O -&#45;osscan-guess -oX zyxel_udp-only.xml 192.168.10.1" start="1715445109" startstr="Sat May 11 19:31:49 2024" version="7.93" xmloutputversion="1.05">
+<scaninfo type="udp" protocol="udp" numservices="65535" services="1-65535"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="192.168.10.1" addrtype="ipv4"/>
+<address addr="68:13:24:A0:3B:DA" addrtype="mac" vendor="Huawei Device"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<host starttime="1715445110" endtime="1715446010" timedout="true"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="192.168.10.1" addrtype="ipv4"/>
+<address addr="68:13:24:A0:3B:DA" addrtype="mac" vendor="Huawei Device"/>
+<hostnames>
+<hostname name="dna.mokkula" type="PTR"/>
+</hostnames>
+<times srtt="4567" rttvar="467" to="50000"/>
+</host>
+<runstats><finished time="1715446010" timestr="Sat May 11 19:46:50 2024" summary="Nmap done at Sat May 11 19:46:50 2024; 1 IP address (1 host up) scanned in 901.76 seconds" elapsed="901.76" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

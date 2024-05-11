@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.93 scan initiated Sat May 11 19:29:53 2024 as: nmap -p 1-65535 -A -sV -&#45;version-all -O -&#45;osscan-guess -oX zyxel_A.xml 192.168.10.1 -->
+<nmaprun scanner="nmap" args="nmap -p 1-65535 -A -sV -&#45;version-all -O -&#45;osscan-guess -oX zyxel_A.xml 192.168.10.1" start="1715444993" startstr="Sat May 11 19:29:53 2024" version="7.93" xmloutputversion="1.05">
+<scaninfo type="syn" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="192.168.10.1" addrtype="ipv4"/>
+<address addr="68:13:24:A0:3B:DA" addrtype="mac" vendor="Huawei Device"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<host starttime="1715444994" endtime="1715445107"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="192.168.10.1" addrtype="ipv4"/>
+<address addr="68:13:24:A0:3B:DA" addrtype="mac" vendor="Huawei Device"/>
+<hostnames>
+<hostname name="dna.mokkula" type="PTR"/>
+</hostnames>
+<ports><extraports state="closed" count="65528">
+<extrareasons reason="reset" count="65528" proto="tcp" ports="1-52,54-79,81-442,444-2999,3001-7546,7548-20248,20250-37214,37216-65535"/>
+</extraports>
+<port protocol="tcp" portid="53"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="tcpwrapped" method="probed" conf="8"/></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="http" servicefp="SF-Port80-TCP:V=7.93%I=9%D=5/11%Time=663F9D17%P=aarch64-unknown-linux-gnu%r(GetRequest,104,&quot;HTTP/1\.1\x20404\x20\r\nContent-Type:\x20text/plain\r\nX-Download-Options:\x20noopen\r\nX-Frame-Options:\x20SAMEORIGIN\r\nX-XSS-Protection:\x201;\x20mode=block\r\nContent-Security-Policy:\x20default-src\x20&apos;self&apos;\x20&apos;unsafe-inline&apos;\x20&apos;unsafe-eval&apos;\r\nX-Content-Type-Options:\x20nosniff\r\nContent-Length:\x200\r\n\r\n&quot;)%r(HTTPOptions,24,&quot;HTTP/1\.1\x20405\x20\r\nContent-Length:\x200\r\n\r\n&quot;)%r(RTSPRequest,24,&quot;HTTP/1\.1\x20405\x20\r\nContent-Length:\x200\r\n\r\n&quot;)%r(X11Probe,24,&quot;HTTP/1\.1\x20405\x20\r\nContent-Length:\x200\r\n\r\n&quot;)%r(FourOhFourRequest,104,&quot;HTTP/1\.1\x20404\x20\r\nContent-Type:\x20text/plain\r\nX-Download-Options:\x20noopen\r\nX-Frame-Options:\x20SAMEORIGIN\r\nX-XSS-Protection:\x201;\x20mode=block\r\nContent-Security-Policy:\x20default-src\x20&apos;self&apos;\x20&apos;unsafe-inline&apos;\x20&apos;unsafe-eval&apos;\r\nX-Content-Type-Options:\x20nosniff\r\nContent-Length:\x200\r\n\r\n&quot;)%r(GenericLines,24,&quot;HTTP/1\.1\x20405\x20\r\nContent-Length:\x200\r\n\r\n&quot;)%r(RPCCheck,24,&quot;HTTP/1\.1\x20405\x20\r\nContent-Length:\x200\r\n\r\n&quot;)%r(DNSVersionBindReqTCP,24,&quot;HTTP/1\.1\x20405\x20\r\nContent-Length:\x200\r\n\r\n&quot;)%r(DNSStatusRequestTCP,24,&quot;HTTP/1\.1\x20405\x20\r\nContent-Length:\x200\r\n\r\n&quot;)%r(Hello,24,&quot;HTTP/1\.1\x20405\x20\r\nContent-Length:\x200\r\n\r\n&quot;)%r(Help,24,&quot;HTTP/1\.1\x20405\x20\r\nContent-Length:\x200\r\n\r\n&quot;)%r(SSLSessionReq,24,&quot;HTTP/1\.1\x20405\x20\r\nContent-Length:\x200\r\n\r\n&quot;)%r(TerminalServerCookie,24,&quot;HTTP/1\.1\x20405\x20\r\nContent-Length:\x200\r\n\r\n&quot;)%r(TLSSessionReq,24,&quot;HTTP/1\.1\x20405\x20\r\nContent-Length:\x200\r\n\r\n&quot;)%r(SSLv23SessionReq,24,&quot;HTTP/1\.1\x20405\x20\r\nContent-Length:\x200\r\n\r\n&quot;)%r(Kerberos,24,&quot;HTTP/1\.1\x20405\x20\r\nContent-Length:\x200\r\n\r\n&quot;)%r(SMBProgNeg,24,&quot;HTTP/1\.1\x20405\x20\r\nContent-Length:\x200\r\n\r\n&quot;)%r(LPDString,24,&quot;HTTP/1\.1\x20405\x20\r\nContent-Length:\x200\r\n\r\n&quot;)%r(LDAPSearchReq,24,&quot;HTTP/1\.1\x20405\x20\r\nContent-Length:\x200\r\n\r\n&quot;)%r(LDAPBindReq,24,&quot;HTTP/1\.1\x20405\x20\r\nContent-Length:\x200\r\n\r\n&quot;);" method="probed" conf="10"/><script id="fingerprint-strings" output="&#xa;  DNSStatusRequestTCP, DNSVersionBindReqTCP, GenericLines, HTTPOptions, Hello, Help, Kerberos, LDAPBindReq, LDAPSearchReq, LPDString, RPCCheck, RTSPRequest, SMBProgNeg, SSLSessionReq, SSLv23SessionReq, TLSSessionReq, TerminalServerCookie, X11Probe: &#xa;    HTTP/1.1 405 &#xa;    Content-Length: 0&#xa;  FourOhFourRequest, GetRequest: &#xa;    HTTP/1.1 404 &#xa;    Content-Type: text/plain&#xa;    X-Download-Options: noopen&#xa;    X-Frame-Options: SAMEORIGIN&#xa;    X-XSS-Protection: 1; mode=block&#xa;    Content-Security-Policy: default-src &apos;self&apos; &apos;unsafe-inline&apos; &apos;unsafe-eval&apos;&#xa;    X-Content-Type-Options: nosniff&#xa;    Content-Length: 0"><elem key="DNSStatusRequestTCP, DNSVersionBindReqTCP, GenericLines, HTTPOptions, Hello, Help, Kerberos, LDAPBindReq, LDAPSearchReq, LPDString, RPCCheck, RTSPRequest, SMBProgNeg, SSLSessionReq, SSLv23SessionReq, TLSSessionReq, TerminalServerCookie, X11Probe">&#xa;    HTTP/1.1 405 &#xa;    Content-Length: 0</elem>
+<elem key="FourOhFourRequest, GetRequest">&#xa;    HTTP/1.1 404 &#xa;    Content-Type: text/plain&#xa;    X-Download-Options: noopen&#xa;    X-Frame-Options: SAMEORIGIN&#xa;    X-XSS-Protection: 1; mode=block&#xa;    Content-Security-Policy: default-src &apos;self&apos; &apos;unsafe-inline&apos; &apos;unsafe-eval&apos;&#xa;    X-Content-Type-Options: nosniff&#xa;    Content-Length: 0</elem>
+</script><script id="http-title" output="Site doesn&apos;t have a title (text/html)."><elem key="title"></elem>
+</script></port>
+<port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="https" servicefp="SF-Port443-TCP:V=7.93%T=SSL%I=9%D=5/11%Time=663F9D1C%P=aarch64-unknown-linux-gnu%r(GetRequest,131,&quot;HTTP/1\.1\x20404\x20\r\nContent-Type:\x20text/plain\r\nX-Download-Options:\x20noopen\r\nX-Frame-Options:\x20SAMEORIGIN\r\nX-XSS-Protection:\x201;\x20mode=block\r\nContent-Security-Policy:\x20default-src\x20&apos;self&apos;\x20&apos;unsafe-inline&apos;\x20&apos;unsafe-eval&apos;\r\nX-Content-Type-Options:\x20nosniff\r\nStrict-Transport-Security:\x20max-age=31536000\r\nContent-Length:\x200\r\n\r\n&quot;)%r(HTTPOptions,24,&quot;HTTP/1\.1\x20405\x20\r\nContent-Length:\x200\r\n\r\n&quot;)%r(FourOhFourRequest,131,&quot;HTTP/1\.1\x20404\x20\r\nContent-Type:\x20text/plain\r\nX-Download-Options:\x20noopen\r\nX-Frame-Options:\x20SAMEORIGIN\r\nX-XSS-Protection:\x201;\x20mode=block\r\nContent-Security-Policy:\x20default-src\x20&apos;self&apos;\x20&apos;unsafe-inline&apos;\x20&apos;unsafe-eval&apos;\r\nX-Content-Type-Options:\x20nosniff\r\nStrict-Transport-Security:\x20max-age=31536000\r\nContent-Length:\x200\r\n\r\n&quot;)%r(tor-versions,24,&quot;HTTP/1\.1\x20405\x20\r\nContent-Length:\x200\r\n\r\n&quot;)%r(RTSPRequest,24,&quot;HTTP/1\.1\x20405\x20\r\nContent-Length:\x200\r\n\r\n&quot;)%r(RPCCheck,24,&quot;HTTP/1\.1\x20405\x20\r\nContent-Length:\x200\r\n\r\n&quot;)%r(DNSVersionBindReqTCP,24,&quot;HTTP/1\.1\x20405\x20\r\nContent-Length:\x200\r\n\r\n&quot;)%r(DNSStatusRequestTCP,24,&quot;HTTP/1\.1\x20405\x20\r\nContent-Length:\x200\r\n\r\n&quot;)%r(Hello,24,&quot;HTTP/1\.1\x20405\x20\r\nContent-Length:\x200\r\n\r\n&quot;)%r(Help,24,&quot;HTTP/1\.1\x20405\x20\r\nContent-Length:\x200\r\n\r\n&quot;)%r(SSLSessionReq,24,&quot;HTTP/1\.1\x20405\x20\r\nContent-Length:\x200\r\n\r\n&quot;)%r(TerminalServerCookie,24,&quot;HTTP/1\.1\x20405\x20\r\nContent-Length:\x200\r\n\r\n&quot;)%r(TLSSessionReq,24,&quot;HTTP/1\.1\x20405\x20\r\nContent-Length:\x200\r\n\r\n&quot;)%r(SSLv23SessionReq,24,&quot;HTTP/1\.1\x20405\x20\r\nContent-Length:\x200\r\n\r\n&quot;)%r(Kerberos,24,&quot;HTTP/1\.1\x20405\x20\r\nContent-Length:\x200\r\n\r\n&quot;)%r(SMBProgNeg,24,&quot;HTTP/1\.1\x20405\x20\r\nContent-Length:\x200\r\n\r\n&quot;)%r(X11Probe,24,&quot;HTTP/1\.1\x20405\x20\r\nContent-Length:\x200\r\n\r\n&quot;)%r(LPDString,24,&quot;HTTP/1\.1\x20405\x20\r\nContent-Length:\x200\r\n\r\n&quot;)%r(LDAPSearchReq,24,&quot;HTTP/1\.1\x20405\x20\r\nContent-Length:\x200\r\n\r\n&quot;);" tunnel="ssl" method="probed" conf="10"/><script id="fingerprint-strings" output="&#xa;  DNSStatusRequestTCP, DNSVersionBindReqTCP, HTTPOptions, Hello, Help, Kerberos, LDAPSearchReq, LPDString, RPCCheck, RTSPRequest, SMBProgNeg, SSLSessionReq, SSLv23SessionReq, TLSSessionReq, TerminalServerCookie, X11Probe, tor-versions: &#xa;    HTTP/1.1 405 &#xa;    Content-Length: 0&#xa;  FourOhFourRequest, GetRequest: &#xa;    HTTP/1.1 404 &#xa;    Content-Type: text/plain&#xa;    X-Download-Options: noopen&#xa;    X-Frame-Options: SAMEORIGIN&#xa;    X-XSS-Protection: 1; mode=block&#xa;    Content-Security-Policy: default-src &apos;self&apos; &apos;unsafe-inline&apos; &apos;unsafe-eval&apos;&#xa;    X-Content-Type-Options: nosniff&#xa;    Strict-Transport-Security: max-age=31536000&#xa;    Content-Length: 0"><elem key="DNSStatusRequestTCP, DNSVersionBindReqTCP, HTTPOptions, Hello, Help, Kerberos, LDAPSearchReq, LPDString, RPCCheck, RTSPRequest, SMBProgNeg, SSLSessionReq, SSLv23SessionReq, TLSSessionReq, TerminalServerCookie, X11Probe, tor-versions">&#xa;    HTTP/1.1 405 &#xa;    Content-Length: 0</elem>
+<elem key="FourOhFourRequest, GetRequest">&#xa;    HTTP/1.1 404 &#xa;    Content-Type: text/plain&#xa;    X-Download-Options: noopen&#xa;    X-Frame-Options: SAMEORIGIN&#xa;    X-XSS-Protection: 1; mode=block&#xa;    Content-Security-Policy: default-src &apos;self&apos; &apos;unsafe-inline&apos; &apos;unsafe-eval&apos;&#xa;    X-Content-Type-Options: nosniff&#xa;    Strict-Transport-Security: max-age=31536000&#xa;    Content-Length: 0</elem>
+</script><script id="http-title" output="Site doesn&apos;t have a title (text/html)."><elem key="title"></elem>
+</script><script id="ssl-cert" output="Subject: commonName=mediarouter.home/stateOrProvinceName=Hubei/countryName=CN&#xa;Subject Alternative Name: DNS:mediarouter.home, DNS:mediarouter1.home, DNS:mediarouter2.home, DNS:mediarouter3.home&#xa;Not valid before: 2018-02-07T07:50:35&#xa;Not valid after:  2048-01-31T07:50:35"><table key="subject">
+<elem key="commonName">mediarouter.home</elem>
+<elem key="countryName">CN</elem>
+<elem key="localityName">Wuhan</elem>
+<elem key="stateOrProvinceName">Hubei</elem>
+</table>
+<table key="issuer">
+<elem key="commonName">root.home</elem>
+<elem key="countryName">CN</elem>
+<elem key="emailAddress">mobile@huawei.com</elem>
+<elem key="localityName">Wuhan</elem>
+<elem key="stateOrProvinceName">Hubei</elem>
+</table>
+<table key="pubkey">
+<elem key="type">rsa</elem>
+<elem key="bits">2048</elem>
+<elem key="modulus">ABE59C15067BDD4C9700877C70FC017C0B819B2D984EF8EB74DADCDD729CB96E48DA88D82ABE8BC7D5BCA1A0EA434A4C537EB91FBEE98B181EEF93B1DD3326F7FD9194A5189B3EF9FD1ACEE081B1219AC87F0BFD8A2215AD7C60A0659FA3CBC7423A09A2DE9D1978AA4F0D10DBB84A78CE1DD4BBD6A13E7E3B44A6398339DAEF6B1D2C30968E1E6681C2729536FE063F53FCBFAF83D63173033D6EED3868AD282965EBB470D5D0780DE4060AEAF70C23251C06408AB3274028641A37A903C114E1056ADBC72649C7F0EC077838C1B481BF736A4A94F72A086810CC676F3851746D8AD71ACE4F27B156EE393B72F3DE6AD885DC06E2A040555160C898A719B669</elem>
+<elem key="exponent">65537</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="name">X509v3 Subject Key Identifier</elem>
+<elem key="value">FE:CF:0D:35:E1:DB:46:34:04:ED:D9:F1:22:DB:96:81:83:B1:85:E6</elem>
+</table>
+<table>
+<elem key="name">X509v3 Authority Key Identifier</elem>
+<elem key="value">BD:21:BE:46:3A:BE:23:91:5D:93:0D:68:A3:0F:0C:EA:1B:0D:4E:E1</elem>
+</table>
+<table>
+<elem key="name">X509v3 Basic Constraints</elem>
+<elem key="value">CA:FALSE</elem>
+</table>
+<table>
+<elem key="name">X509v3 Key Usage</elem>
+<elem key="value">Digital Signature, Non Repudiation, Key Encipherment</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Alternative Name</elem>
+<elem key="value">DNS:mediarouter.home, DNS:mediarouter1.home, DNS:mediarouter2.home, DNS:mediarouter3.home</elem>
+</table>
+<table>
+<elem key="name">Netscape Comment</elem>
+<elem key="value">OpenSSL Generated Certificate</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2018-02-07T07:50:35</elem>
+<elem key="notAfter">2048-01-31T07:50:35</elem>
+</table>
+<elem key="md5">f6fc595921c75a20262288375f679074</elem>
+<elem key="sha1">4a7d99da66cf0f6cbec9e5989932a85073e5e206</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIEBjCCAu6gAwIBAgIBATANBgkqhkiG9w0BAQsFADBjMQswCQYDVQQGEwJDTjEO&#xa;MAwGA1UECAwFSHViZWkxDjAMBgNVBAcMBVd1aGFuMRIwEAYDVQQDDAlyb290Lmhv&#xa;bWUxIDAeBgkqhkiG9w0BCQEWEW1vYmlsZUBodWF3ZWkuY29tMB4XDTE4MDIwNzA3&#xa;NTAzNVoXDTQ4MDEzMTA3NTAzNVowSDELMAkGA1UEBhMCQ04xDjAMBgNVBAgMBUh1&#xa;YmVpMQ4wDAYDVQQHDAVXdWhhbjEZMBcGA1UEAwwQbWVkaWFyb3V0ZXIuaG9tZTCC&#xa;ASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAKvlnBUGe91MlwCHfHD8AXwL&#xa;gZstmE7463Ta3N1ynLluSNqI2Cq+i8fVvKGg6kNKTFN+uR++6YsYHu+Tsd0zJvf9&#xa;kZSlGJs++f0azuCBsSGayH8L/YoiFa18YKBln6PLx0I6CaLenRl4qk8NENu4SnjO&#xa;HdS71qE+fjtEpjmDOdrvax0sMJaOHmaBwnKVNv4GP1P8v6+D1jFzAz1u7ThorSgp&#xa;Zeu0cNXQeA3kBgrq9wwjJRwGQIqzJ0AoZBo3qQPBFOEFatvHJknH8OwHeDjBtIG/&#xa;c2pKlPcqCGgQzGdvOFF0bYrXGs5PJ7FW7jk7cvPeatiF3AbioEBVUWDImKcZtmkC&#xa;AwEAAaOB3zCB3DAdBgNVHQ4EFgQU/s8NNeHbRjQE7dnxItuWgYOxheYwHwYDVR0j&#xa;BBgwFoAUvSG+Rjq+I5Fdkw1oow8M6hsNTuEwCQYDVR0TBAIwADALBgNVHQ8EBAMC&#xa;BeAwVAYDVR0RBE0wS4IQbWVkaWFyb3V0ZXIuaG9tZYIRbWVkaWFyb3V0ZXIxLmhv&#xa;bWWCEW1lZGlhcm91dGVyMi5ob21lghFtZWRpYXJvdXRlcjMuaG9tZTAsBglghkgB&#xa;hvhCAQ0EHxYdT3BlblNTTCBHZW5lcmF0ZWQgQ2VydGlmaWNhdGUwDQYJKoZIhvcN&#xa;AQELBQADggEBAESa5wYA8NiLcqYAq8xUcVZY8NyEcT6A90OEZeRX7n1jILNXhrar&#xa;YxrivEQ1FnU5mHyU1i0HrzSVR3iU4FSR0ZClyzncdNx3g5jWRYLhkQOqTnS92DBk&#xa;HyYTDtOpXXl4Wpz5AIHaOBXO8/SEFn9jfoIOQi4WFSQk7XxltVuaPOnlAhvwD5t+&#xa;D5CvusJA6A6oXRJDXcLZoxR6JhIx2rzKfF6JMq1FYgxhh+5kSjuyf7SzhBHwr4wa&#xa;MrH3ObyjUdfV+6Vy1LweBkZUAqgAntDbSmT/Klx6J7D81qTKiBjZQcFth2Oz5DSW&#xa;afo1OgkxfEGsr7d0bXZuSi37A/JOymA2P0Y=&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script><script id="ssl-date" output="TLS randomness does not represent time"></script></port>
+<port protocol="tcp" portid="3000"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="ppp" method="table" conf="3"/></port>
+<port protocol="tcp" portid="7547"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="cwmp" method="table" conf="3"/></port>
+<port protocol="tcp" portid="20249"><state state="filtered" reason="no-response" reason_ttl="0"/></port>
+<port protocol="tcp" portid="37215"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="upnp" servicefp="SF-Port37215-TCP:V=7.93%I=9%D=5/11%Time=663F9D12%P=aarch64-unknown-linux-gnu%r(GenericLines,24,&quot;HTTP/1\.1\x20405\x20\r\nContent-Length:\x200\r\n\r\n&quot;)%r(GetRequest,AC,&quot;HTTP/1\.1\x20404\x20\r\nContent-Type:\x20text/xml;\x20charset=\&quot;utf-8\&quot;\r\nServer:\x20Linux\x20UPnP/1\.0\x20Huawei-ATP-IGD\r\nDate:\x20Sat,\x2011\x20May\x202024\x2019:29:59\x20GMT\r\nConnection:\x20Close\r\nContent-Length:\x200\r\n\r\n&quot;)%r(HTTPOptions,24,&quot;HTTP/1\.1\x20405\x20\r\nContent-Length:\x200\r\n\r\n&quot;)%r(RTSPRequest,24,&quot;HTTP/1\.1\x20405\x20\r\nContent-Length:\x200\r\n\r\n&quot;)%r(RPCCheck,24,&quot;HTTP/1\.1\x20405\x20\r\nContent-Length:\x200\r\n\r\n&quot;)%r(DNSVersionBindReqTCP,24,&quot;HTTP/1\.1\x20405\x20\r\nContent-Length:\x200\r\n\r\n&quot;)%r(DNSStatusRequestTCP,24,&quot;HTTP/1\.1\x20405\x20\r\nContent-Length:\x200\r\n\r\n&quot;)%r(Hello,24,&quot;HTTP/1\.1\x20405\x20\r\nContent-Length:\x200\r\n\r\n&quot;)%r(Help,24,&quot;HTTP/1\.1\x20405\x20\r\nContent-Length:\x200\r\n\r\n&quot;)%r(SSLSessionReq,24,&quot;HTTP/1\.1\x20405\x20\r\nContent-Length:\x200\r\n\r\n&quot;)%r(TerminalServerCookie,24,&quot;HTTP/1\.1\x20405\x20\r\nContent-Length:\x200\r\n\r\n&quot;)%r(TLSSessionReq,24,&quot;HTTP/1\.1\x20405\x20\r\nContent-Length:\x200\r\n\r\n&quot;)%r(SSLv23SessionReq,24,&quot;HTTP/1\.1\x20405\x20\r\nContent-Length:\x200\r\n\r\n&quot;)%r(Kerberos,24,&quot;HTTP/1\.1\x20405\x20\r\nContent-Length:\x200\r\n\r\n&quot;)%r(SMBProgNeg,24,&quot;HTTP/1\.1\x20405\x20\r\nContent-Length:\x200\r\n\r\n&quot;)%r(X11Probe,24,&quot;HTTP/1\.1\x20405\x20\r\nContent-Length:\x200\r\n\r\n&quot;)%r(FourOhFourRequest,AC,&quot;HTTP/1\.1\x20404\x20\r\nContent-Type:\x20text/xml;\x20charset=\&quot;utf-8\&quot;\r\nServer:\x20Linux\x20UPnP/1\.0\x20Huawei-ATP-IGD\r\nDate:\x20Sat,\x2011\x20May\x202024\x2019:29:59\x20GMT\r\nConnection:\x20Close\r\nContent-Length:\x200\r\n\r\n&quot;)%r(LPDString,24,&quot;HTTP/1\.1\x20405\x20\r\nContent-Length:\x200\r\n\r\n&quot;)%r(LDAPSearchReq,24,&quot;HTTP/1\.1\x20405\x20\r\nContent-Length:\x200\r\n\r\n&quot;)%r(LDAPBindReq,24,&quot;HTTP/1\.1\x20405\x20\r\nContent-Length:\x200\r\n\r\n&quot;)%r(SIPOptions,24,&quot;HTTP/1\.1\x20405\x20\r\nContent-Length:\x200\r\n\r\n&quot;)%r(LANDesk-RC,24,&quot;HTTP/1\.1\x20405\x20\r\nContent-Length:\x200\r\n\r\n&quot;)%r(TerminalServer,24,&quot;HTTP/1\.1\x20405\x20\r\nContent-Length:\x200\r\n\r\n&quot;);" method="probed" conf="10"/><script id="fingerprint-strings" output="&#xa;  DNSStatusRequestTCP, DNSVersionBindReqTCP, GenericLines, HTTPOptions, Hello, Help, Kerberos, LANDesk-RC, LDAPBindReq, LDAPSearchReq, LPDString, RPCCheck, RTSPRequest, SIPOptions, SMBProgNeg, SSLSessionReq, SSLv23SessionReq, TLSSessionReq, TerminalServer, TerminalServerCookie, X11Probe: &#xa;    HTTP/1.1 405 &#xa;    Content-Length: 0&#xa;  FourOhFourRequest, GetRequest: &#xa;    HTTP/1.1 404 &#xa;    Content-Type: text/xml; charset=&quot;utf-8&quot;&#xa;    Server: Linux UPnP/1.0 Huawei-ATP-IGD&#xa;    Date: Sat, 11 May 2024 19:29:59 GMT&#xa;    Connection: Close&#xa;    Content-Length: 0"><elem key="DNSStatusRequestTCP, DNSVersionBindReqTCP, GenericLines, HTTPOptions, Hello, Help, Kerberos, LANDesk-RC, LDAPBindReq, LDAPSearchReq, LPDString, RPCCheck, RTSPRequest, SIPOptions, SMBProgNeg, SSLSessionReq, SSLv23SessionReq, TLSSessionReq, TerminalServer, TerminalServerCookie, X11Probe">&#xa;    HTTP/1.1 405 &#xa;    Content-Length: 0</elem>
+<elem key="FourOhFourRequest, GetRequest">&#xa;    HTTP/1.1 404 &#xa;    Content-Type: text/xml; charset=&quot;utf-8&quot;&#xa;    Server: Linux UPnP/1.0 Huawei-ATP-IGD&#xa;    Date: Sat, 11 May 2024 19:29:59 GMT&#xa;    Connection: Close&#xa;    Content-Length: 0</elem>
+</script></port>
+</ports>
+<os><portused state="open" proto="tcp" portid="80"/>
+<portused state="closed" proto="tcp" portid="1"/>
+<portused state="closed" proto="udp" portid="41649"/>
+<osmatch name="Linux 3.12 - 4.10" accuracy="96" line="63724">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="96"><cpe>cpe:/o:linux:linux_kernel:3</cpe></osclass>
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="4.X" accuracy="96"><cpe>cpe:/o:linux:linux_kernel:4</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 3.16" accuracy="96" line="64298">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="96"><cpe>cpe:/o:linux:linux_kernel:3.16</cpe></osclass>
+</osmatch>
+<osmatch name="ASUS RT-N56U WAP (Linux 3.4)" accuracy="95" line="8398">
+<osclass type="WAP" vendor="Asus" osfamily="embedded" accuracy="95"><cpe>cpe:/h:asus:rt-n56u</cpe></osclass>
+<osclass type="WAP" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="95"><cpe>cpe:/o:linux:linux_kernel:3.4</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 2.6.32" accuracy="93" line="40424">
+<osclass type="security-misc" vendor="Imperva" osfamily="SecureSphere" accuracy="93"><cpe>cpe:/o:imperva:securesphere</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 3.10" accuracy="93" line="63230">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="93"><cpe>cpe:/o:linux:linux_kernel:3.10</cpe></osclass>
+</osmatch>
+<osmatch name="Western Digital My Cloud DL4100 NAS (Linux 3.10)" accuracy="93" line="104998">
+<osclass type="storage-misc" vendor="Western Digital" osfamily="embedded" accuracy="93"/>
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="93"><cpe>cpe:/o:linux:linux_kernel:3.10</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 3.1" accuracy="93" line="62917">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="93"><cpe>cpe:/o:linux:linux_kernel:3.1</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 3.2" accuracy="93" line="64664">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="93"><cpe>cpe:/o:linux:linux_kernel:3.2</cpe></osclass>
+</osmatch>
+<osmatch name="AXIS 210A or 211 Network Camera (Linux 2.6.17)" accuracy="92" line="61815">
+<osclass type="webcam" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="92"><cpe>cpe:/o:linux:linux_kernel:2.6.17</cpe></osclass>
+<osclass type="webcam" vendor="AXIS" osfamily="embedded" accuracy="92"><cpe>cpe:/h:axis:210a_network_camera</cpe><cpe>cpe:/h:axis:211_network_camera</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 3.10 - 4.1" accuracy="92" line="63404">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="92"><cpe>cpe:/o:linux:linux_kernel:3</cpe></osclass>
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="4.X" accuracy="92"><cpe>cpe:/o:linux:linux_kernel:4</cpe></osclass>
+</osmatch>
+<osfingerprint fingerprint="OS:SCAN(V=7.93%E=4%D=5/11%OT=80%CT=1%CU=41649%PV=Y%DS=1%DC=D%G=Y%M=681324%T&#xa;OS:M=663F9D73%P=aarch64-unknown-linux-gnu)SEQ(SP=104%GCD=1%ISR=10B%TI=Z%CI=&#xa;OS:I%II=I%TS=U)OPS(O1=M5B4NNSNW6%O2=M5B4NNSNW6%O3=M5B4NW6%O4=M5B4NNSNW6%O5=&#xa;OS:M5B4NNSNW6%O6=M5B4NNS)WIN(W1=7210%W2=7210%W3=7210%W4=7210%W5=7210%W6=721&#xa;OS:0)ECN(R=Y%DF=Y%T=40%W=7210%O=M5B4NNSNW6%CC=Y%Q=)T1(R=Y%DF=Y%T=40%S=O%A=S&#xa;OS:+%F=AS%RD=0%Q=)T2(R=N)T3(R=N)T4(R=Y%DF=Y%T=40%W=0%S=A%A=Z%F=R%O=%RD=0%Q=&#xa;OS:)T5(R=Y%DF=Y%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)T6(R=Y%DF=Y%T=40%W=0%S=A%&#xa;OS:A=Z%F=R%O=%RD=0%Q=)T7(R=Y%DF=Y%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)U1(R=Y%&#xa;OS:DF=N%T=40%IPL=164%UN=0%RIPL=G%RID=G%RIPCK=G%RUCK=G%RUD=G)IE(R=Y%DFI=N%T=&#xa;OS:40%CD=S)&#xa;"/>
+</os>
+<distance value="1"/>
+<tcpsequence index="260" difficulty="Good luck!" values="9D106450,FA37506C,D53164B5,93E52131,1F29CD92,FEDF7D26"/>
+<ipidsequence class="All zeros" values="0,0,0,0,0,0"/>
+<tcptssequence class="none returned (unsupported)"/>
+<trace>
+<hop ttl="1" ipaddr="192.168.10.1" rtt="1.69" host="dna.mokkula"/>
+</trace>
+<times srtt="1690" rttvar="1154" to="100000"/>
+</host>
+<runstats><finished time="1715445107" timestr="Sat May 11 19:31:47 2024" summary="Nmap done at Sat May 11 19:31:47 2024; 1 IP address (1 host up) scanned in 114.25 seconds" elapsed="114.25" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
