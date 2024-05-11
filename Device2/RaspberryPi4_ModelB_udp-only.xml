@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.80 scan initiated Sun May  5 15:46:15 2024 as: nmap -T5 -v -p 1-65535 -sU -sV -&#45;version-all -O -&#45;osscan-guess -oX RaspberryPi4_ModelB_udp-only.xml raspberrypi.local -->
+<nmaprun scanner="nmap" args="nmap -T5 -v -p 1-65535 -sU -sV -&#45;version-all -O -&#45;osscan-guess -oX RaspberryPi4_ModelB_udp-only.xml raspberrypi.local" start="1714913175" startstr="Sun May  5 15:46:15 2024" version="7.80" xmloutputversion="1.04">
+<scaninfo type="udp" protocol="udp" numservices="65535" services="1-65535"/>
+<verbose level="1"/>
+<debugging level="0"/>
+<taskbegin task="ARP Ping Scan" time="1714913175"/>
+<taskend task="ARP Ping Scan" time="1714913175" extrainfo="1 total hosts"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1714913176"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1714913176"/>
+<taskbegin task="UDP Scan" time="1714913176"/>
+<taskprogress task="UDP Scan" time="1714913207" percent="4.15" remaining="716" etc="1714913922"/>
+<taskprogress task="UDP Scan" time="1714913237" percent="4.32" remaining="1352" etc="1714914588"/>
+<taskprogress task="UDP Scan" time="1714913267" percent="4.40" remaining="1978" etc="1714915244"/>
+<taskprogress task="UDP Scan" time="1714913297" percent="4.43" remaining="2608" etc="1714915904"/>
+<taskprogress task="UDP Scan" time="1714913327" percent="4.46" remaining="3232" etc="1714916558"/>
+<taskprogress task="UDP Scan" time="1714913357" percent="4.51" remaining="3833" etc="1714917190"/>
+<taskprogress task="UDP Scan" time="1714913387" percent="4.56" remaining="4421" etc="1714917807"/>
+<taskprogress task="UDP Scan" time="1714913417" percent="4.60" remaining="4997" etc="1714918414"/>
+<taskprogress task="UDP Scan" time="1714913447" percent="4.65" remaining="5561" etc="1714919007"/>
+<taskprogress task="UDP Scan" time="1714913477" percent="4.69" remaining="6114" etc="1714919590"/>
+<taskprogress task="UDP Scan" time="1714913507" percent="4.74" remaining="6654" etc="1714920161"/>
+<taskprogress task="UDP Scan" time="1714913537" percent="4.78" remaining="7185" etc="1714920722"/>
+<taskprogress task="UDP Scan" time="1714913567" percent="4.83" remaining="7704" etc="1714921270"/>
+<taskprogress task="UDP Scan" time="1714913597" percent="4.88" remaining="8214" etc="1714921811"/>
+<taskprogress task="UDP Scan" time="1714913627" percent="4.92" remaining="8712" etc="1714922339"/>
+<taskprogress task="UDP Scan" time="1714913657" percent="4.97" remaining="9203" etc="1714922859"/>
+<taskprogress task="UDP Scan" time="1714913690" percent="5.02" remaining="9731" etc="1714923421"/>
+<taskprogress task="UDP Scan" time="1714913723" percent="5.07" remaining="10246" etc="1714923968"/>
+<taskprogress task="UDP Scan" time="1714913759" percent="5.12" remaining="10800" etc="1714924558"/>
+<taskprogress task="UDP Scan" time="1714913798" percent="5.18" remaining="11382" etc="1714925179"/>
+<taskprogress task="UDP Scan" time="1714913840" percent="5.25" remaining="11992" etc="1714925832"/>
+<taskprogress task="UDP Scan" time="1714913885" percent="5.31" remaining="12632" etc="1714926516"/>
+<taskprogress task="UDP Scan" time="1714913936" percent="5.39" remaining="13333" etc="1714927268"/>
+<taskprogress task="UDP Scan" time="1714913990" percent="5.47" remaining="14056" etc="1714928045"/>
+<taskprogress task="UDP Scan" time="1714914050" percent="5.57" remaining="14829" etc="1714928879"/>
+<taskend task="UDP Scan" time="1714914076" extrainfo="1 host timed out"/>
+<taskbegin task="Service scan" time="1714914076"/>
+<taskbegin task="NSE" time="1714914076"/>
+<taskend task="NSE" time="1714914076"/>
+<taskbegin task="NSE" time="1714914076"/>
+<taskend task="NSE" time="1714914076"/>
+<host starttime="1714913175" endtime="1714914076"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="192.168.0.101" addrtype="ipv4"/>
+<address addr="D8:3A:DD:37:BF:91" addrtype="mac"/>
+<hostnames>
+<hostname name="raspberrypi.local" type="user"/>
+</hostnames>
+</host>
+<runstats><finished time="1714914076" timestr="Sun May  5 16:01:16 2024" elapsed="900.88" summary="Nmap done at Sun May  5 16:01:16 2024; 1 IP address (1 host up) scanned in 900.88 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

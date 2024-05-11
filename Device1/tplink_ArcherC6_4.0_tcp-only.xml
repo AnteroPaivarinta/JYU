@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.80 scan initiated Sun May  5 11:13:10 2024 as: nmap -p 1-65535 -sT -sV -&#45;version-all -O -&#45;osscan-guess -oX tplink_ArcherC6_4.0_tcp-only.xml 192.168.0.1 -->
+<nmaprun scanner="nmap" args="nmap -p 1-65535 -sT -sV -&#45;version-all -O -&#45;osscan-guess -oX tplink_ArcherC6_4.0_tcp-only.xml 192.168.0.1" start="1714896790" startstr="Sun May  5 11:13:10 2024" version="7.80" xmloutputversion="1.04">
+<scaninfo type="connect" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<host starttime="1714896791" endtime="1714897122"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="192.168.0.1" addrtype="ipv4"/>
+<address addr="9C:53:22:05:1C:6A" addrtype="mac"/>
+<hostnames>
+<hostname name="_gateway" type="PTR"/>
+</hostnames>
+<ports><extraports state="filtered" count="65528">
+<extrareasons reason="no-responses" count="65528"/>
+</extraports>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ssh" product="OpenSSH" version="6.6.0" extrainfo="protocol 2.0" method="probed" conf="10"><cpe>cpe:/a:openbsd:openssh:6.6.0</cpe></service></port>
+<port protocol="tcp" portid="53"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="domain" extrainfo="unknown banner: rairlu-res22 palveluksessanne." servicefp="SF-Port53-TCP:V=7.80%I=9%D=5/5%Time=66374005%P=x86_64-pc-linux-gnu%r(DNSVersionBindReqTCP,4B,&quot;\0I\0\x06\x81\x80\0\x01\0\x01\0\0\0\0\x07version\x04bind\0\0\x10\0\x03\xc0\x0c\0\x10\0\x03\0\0\x16\xc5\0\x1f\x1erairlu-res22\x20palveluksessanne\.&quot;)%r(DNSStatusRequestTCP,E,&quot;\0\x0c\0\0\x90\x04\0\0\0\0\0\0\0\0&quot;);" method="probed" conf="10"/></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" servicefp="SF-Port80-TCP:V=7.80%I=9%D=5/5%Time=66374002%P=x86_64-pc-linux-gnu%r(GetRequest,A59,&quot;HTTP/1\.0\x20200\x20OK\r\nContent-Type:\x20text/html;charset=UTF-8\r\nContent-Length:\x202525\r\nConnection:\x20close\r\nCache-control:\x20no-cache\r\n\r\n&lt;!DOCTYPE\x20html&gt;&lt;html\x20xmlns=\&quot;http://www\.w3\.org/1999/xhtml\&quot;&gt;&lt;head&gt;&lt;meta\x20http-equiv=\&quot;Content-Type\&quot;\x20content=\&quot;text/html;\x20charset=utf-8\&quot;&gt;&lt;meta\x20http-equiv=\&quot;X-UA-Compatible\&quot;\x20content=\&quot;IE=edge,chrome=1\&quot;&gt;&lt;meta\x20name=\&quot;viewport\&quot;\x20content=\&quot;width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=0\&quot;&gt;&lt;meta\x20name=\&quot;apple-touch-fullscreen\&quot;\x20content=\&quot;yes\&quot;&gt;&lt;meta\x20name=\&quot;apple-mobile-web-app-capable\&quot;\x20content=\&quot;yes\&quot;&gt;&lt;meta\x20name=\&quot;apple-mobile-web-app-status-bar-style\&quot;\x20content=\&quot;black\&quot;&gt;&lt;meta\x20name=\&quot;format-detection\&quot;\x20content=\&quot;telephone=no\&quot;&gt;&lt;meta\x20name=\&quot;version\&quot;\x20content=\&quot;v202109131151\&quot;&gt;&lt;link\x20rel=\&quot;shortcut\x20icon\&quot;\x20href=\&quot;favicon\.ico\?t=a57f083a\&quot;&gt;&lt;link\x20href=\&quot;themes/default/css/perfect-scrollbar\.css\?t=a57f083a\&quot;\x20rel=\&quot;stylesheet\&quot;&gt;&lt;link\x20id=\&quot;baseCss\&quot;\x20href=\&quot;themes/default/css/base\.css\?t=a57f&quot;)%r(HTTPOptions,89,&quot;HTTP/1\.1\x20405\x20Method\x20Not\x20Allowed\r\nContent-Type:\x20text/html;charset=UTF-8\r\nContent-Length:\x200\r\nConnection:\x20close\r\nCache-control:\x20no-cache\r\n\r\n&quot;)%r(RTSPRequest,89,&quot;HTTP/1\.1\x20405\x20Method\x20Not\x20Allowed\r\nContent-Type:\x20text/html;charset=UTF-8\r\nContent-Length:\x200\r\nConnection:\x20close\r\nCache-control:\x20no-cache\r\n\r\n&quot;)%r(FourOhFourRequest,81,&quot;HTTP/1\.0\x20403\x20Forbidden\r\nContent-Type:\x20text/plain;charset=UTF-8\r\nContent-Length:\x200\r\nConnection:\x20close\r\nCache-control:\x20no-cache\r\n\r\n&quot;)%r(GenericLines,82,&quot;HTTP/1\.1\x20400\x20Bad\x20Request\r\nContent-Type:\x20text/html;charset=UTF-8\r\nContent-Length:\x200\r\nConnection:\x20close\r\nCache-control:\x20no-cache\r\n\r\n&quot;)%r(Hello,82,&quot;HTTP/1\.1\x20400\x20Bad\x20Request\r\nContent-Type:\x20text/html;charset=UTF-8\r\nContent-Length:\x200\r\nConnection:\x20close\r\nCache-control:\x20no-cache\r\n\r\n&quot;);" method="probed" conf="10"/></port>
+<port protocol="tcp" portid="1900"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="upnp" servicefp="SF-Port1900-TCP:V=7.80%I=9%D=5/5%Time=66374002%P=x86_64-pc-linux-gnu%r(GetRequest,80,&quot;HTTP/1\.0\x20404\x20Not\x20Found\r\nContent-Type:\x20text/html;charset=UTF-8\r\nContent-Length:\x200\r\nConnection:\x20close\r\nCache-control:\x20no-cache\r\n\r\n&quot;)%r(GenericLines,82,&quot;HTTP/1\.1\x20400\x20Bad\x20Request\r\nContent-Type:\x20text/html;charset=UTF-8\r\nContent-Length:\x200\r\nConnection:\x20close\r\nCache-control:\x20no-cache\r\n\r\n&quot;)%r(HTTPOptions,89,&quot;HTTP/1\.1\x20405\x20Method\x20Not\x20Allowed\r\nContent-Type:\x20text/html;charset=UTF-8\r\nContent-Length:\x200\r\nConnection:\x20close\r\nCache-control:\x20no-cache\r\n\r\n&quot;)%r(RTSPRequest,89,&quot;HTTP/1\.1\x20405\x20Method\x20Not\x20Allowed\r\nContent-Type:\x20text/html;charset=UTF-8\r\nContent-Length:\x200\r\nConnection:\x20close\r\nCache-control:\x20no-cache\r\n\r\n&quot;)%r(Hello,82,&quot;HTTP/1\.1\x20400\x20Bad\x20Request\r\nContent-Type:\x20text/html;charset=UTF-8\r\nContent-Length:\x200\r\nConnection:\x20close\r\nCache-control:\x20no-cache\r\n\r\n&quot;)%r(Help,82,&quot;HTTP/1\.1\x20400\x20Bad\x20Request\r\nContent-Type:\x20text/html;charset=UTF-8\r\nContent-Length:\x200\r\nConnection:\x20close\r\nCache-control:\x20no-cache\r\n\r\n&quot;)%r(TerminalServerCookie,82,&quot;HTTP/1\.1\x20400\x20Bad\x20Request\r\nContent-Type:\x20text/html;charset=UTF-8\r\nContent-Length:\x200\r\nConnection:\x20close\r\nCache-control:\x20no-cache\r\n\r\n&quot;);" method="table" conf="3"/></port>
+<port protocol="tcp" portid="22432"><state state="closed" reason="conn-refused" reason_ttl="0"/></port>
+<port protocol="tcp" portid="29207"><state state="closed" reason="conn-refused" reason_ttl="0"/></port>
+<port protocol="tcp" portid="50816"><state state="closed" reason="conn-refused" reason_ttl="0"/></port>
+</ports>
+<os><portused state="open" proto="tcp" portid="22"/>
+<portused state="closed" proto="tcp" portid="22432"/>
+<osmatch name="Canon imageRUNNER C2380 or C2880i or Xerox Phaser 8860MFP printer" accuracy="94" line="12713">
+<osclass type="printer" vendor="Canon" osfamily="embedded" accuracy="94"><cpe>cpe:/h:canon:imagerunner_c2380</cpe><cpe>cpe:/h:canon:imagerunner_c2880i</cpe><cpe>cpe:/h:xerox:phaser_8860mfp</cpe></osclass>
+</osmatch>
+<osmatch name="Avaya 4526GTX switch" accuracy="94" line="8568">
+<osclass type="switch" vendor="Avaya" osfamily="embedded" accuracy="94"><cpe>cpe:/h:avaya:4526gtx</cpe></osclass>
+</osmatch>
+<osmatch name="Avaya 4000- or 5000-series Ethernet Routing switch" accuracy="91" line="8551">
+<osclass type="switch" vendor="Avaya" osfamily="embedded" accuracy="91"/>
+</osmatch>
+<osmatch name="Canon imageRUNNER C5185 printer" accuracy="91" line="12791">
+<osclass type="printer" vendor="Canon" osfamily="embedded" accuracy="91"><cpe>cpe:/h:canon:imagerunner_c5185</cpe></osclass>
+</osmatch>
+<osmatch name="AirSpan ProST WiMAX access point" accuracy="89" line="1873">
+<osclass type="WAP" vendor="AirSpan" osfamily="embedded" accuracy="89"/>
+</osmatch>
+<osmatch name="ZyXEL GS1910 switch" accuracy="88" line="106983">
+<osclass type="switch" vendor="ZyXEL" osfamily="embedded" accuracy="88"><cpe>cpe:/h:zyxel:gs1910</cpe></osclass>
+</osmatch>
+<osmatch name="IronPort C150 email security appliance (AsyncOS 6.5.3)" accuracy="88" line="40539">
+<osclass type="firewall" vendor="IronPort" osfamily="AsyncOS" osgen="6.X" accuracy="88"><cpe>cpe:/o:ironport:asyncos:6.5.3</cpe></osclass>
+</osmatch>
+<osmatch name="Fujitsu Externus DX80 or IBM DCS9900 NAS device" accuracy="87" line="38777">
+<osclass type="storage-misc" vendor="IBM" osfamily="embedded" accuracy="87"><cpe>cpe:/h:ibm:dcs9900</cpe></osclass>
+<osclass type="storage-misc" vendor="Fujitsu Siemens" osfamily="embedded" accuracy="87"><cpe>cpe:/h:fujitsu:externus_dx80</cpe></osclass>
+</osmatch>
+<osmatch name="Motorola SVG1202 router" accuracy="87" line="86299">
+<osclass type="router" vendor="Motorola" osfamily="embedded" accuracy="87"><cpe>cpe:/h:motorola:svg1202</cpe></osclass>
+</osmatch>
+<osmatch name="VxWorks" accuracy="87" line="105377">
+<osclass type="general purpose" vendor="Wind River" osfamily="VxWorks" accuracy="87"><cpe>cpe:/o:windriver:vxworks</cpe></osclass>
+</osmatch>
+</os>
+<uptime seconds="7467531" lastboot="Thu Feb  8 23:59:51 2024"/>
+<distance value="1"/>
+<tcpsequence index="263" difficulty="Good luck!" values="6999651C,25578A66,9FC6E968,416320EE,1F2368F3,25E77DF7"/>
+<ipidsequence class="Incremental" values="A5A4,A5A5,A5A6,A5A7,A5A8,A5A9"/>
+<tcptssequence class="other" values="1AB4BA3A,1AB4BA40,1AB4BA46,1AB4BA4C,1AB4BA52,1AB4BA58"/>
+<times srtt="543" rttvar="87" to="100000"/>
+</host>
+<runstats><finished time="1714897122" timestr="Sun May  5 11:18:42 2024" elapsed="331.24" summary="Nmap done at Sun May  5 11:18:42 2024; 1 IP address (1 host up) scanned in 331.24 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

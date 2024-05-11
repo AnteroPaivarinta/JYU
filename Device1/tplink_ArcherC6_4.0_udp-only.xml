@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.80 scan initiated Sun May  5 11:24:21 2024 as: nmap -p 1-65535 -T5 -sU -sV -&#45;version-all -O -&#45;osscan-guess -oX tplink_ArcherC6_4.0_udp-only.xml 192.168.0.1 -->
+<nmaprun scanner="nmap" args="nmap -p 1-65535 -T5 -sU -sV -&#45;version-all -O -&#45;osscan-guess -oX tplink_ArcherC6_4.0_udp-only.xml 192.168.0.1" start="1714897461" startstr="Sun May  5 11:24:21 2024" version="7.80" xmloutputversion="1.04">
+<scaninfo type="udp" protocol="udp" numservices="65535" services="1-65535"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<host starttime="1714897461" endtime="1714898364"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="192.168.0.1" addrtype="ipv4"/>
+<address addr="9C:53:22:05:1C:6A" addrtype="mac"/>
+<hostnames>
+<hostname name="_gateway" type="PTR"/>
+</hostnames>
+</host>
+<runstats><finished time="1714898364" timestr="Sun May  5 11:39:24 2024" elapsed="903.06" summary="Nmap done at Sun May  5 11:39:24 2024; 1 IP address (1 host up) scanned in 903.06 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
