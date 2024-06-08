@@ -1,0 +1,1 @@
+Output has got by  input:127.0.0.1|ls
