@@ -1,49 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE nmaprun>
 <?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
-<!-- Nmap 7.80 scan initiated Sun Jun  9 19:39:07 2024 as: nmap -p 1-65535 -T5 -sT -sV -v -&#45;version-all -O -&#45;osscan-guess -oX arris_tcp-only.xml 192.168.0.1 -->
-<nmaprun scanner="nmap" args="nmap -p 1-65535 -T5 -sT -sV -v -&#45;version-all -O -&#45;osscan-guess -oX arris_tcp-only.xml 192.168.0.1" start="1717951147" startstr="Sun Jun  9 19:39:07 2024" version="7.80" xmloutputversion="1.04">
+<!-- Nmap 7.80 scan initiated Sun Jun  9 20:44:47 2024 as: nmap -p 1-65535 -T5 -sT -sV -v -&#45;version-all -O -&#45;osscan-guess -oX arris_tcp-only.xml 192.168.0.1 -->
+<nmaprun scanner="nmap" args="nmap -p 1-65535 -T5 -sT -sV -v -&#45;version-all -O -&#45;osscan-guess -oX arris_tcp-only.xml 192.168.0.1" start="1717955087" startstr="Sun Jun  9 20:44:47 2024" version="7.80" xmloutputversion="1.04">
 <scaninfo type="connect" protocol="tcp" numservices="65535" services="1-65535"/>
 <verbose level="1"/>
 <debugging level="0"/>
-<taskbegin task="ARP Ping Scan" time="1717951147"/>
-<taskend task="ARP Ping Scan" time="1717951147" extrainfo="1 total hosts"/>
-<taskbegin task="Parallel DNS resolution of 1 host." time="1717951147"/>
-<taskend task="Parallel DNS resolution of 1 host." time="1717951147"/>
-<taskbegin task="Connect Scan" time="1717951147"/>
-<taskprogress task="Connect Scan" time="1717951178" percent="2.08" remaining="1461" etc="1717952639"/>
-<taskprogress task="Connect Scan" time="1717951208" percent="5.16" remaining="1123" etc="1717952330"/>
-<taskprogress task="Connect Scan" time="1717951238" percent="8.40" remaining="993" etc="1717952230"/>
-<taskprogress task="Connect Scan" time="1717951277" percent="12.18" remaining="938" etc="1717952214"/>
-<taskprogress task="Connect Scan" time="1717951307" percent="15.34" remaining="884" etc="1717952190"/>
-<taskprogress task="Connect Scan" time="1717951349" percent="19.64" remaining="827" etc="1717952175"/>
-<taskprogress task="Connect Scan" time="1717951394" percent="24.24" remaining="772" etc="1717952166"/>
-<taskprogress task="Connect Scan" time="1717951445" percent="29.36" remaining="717" etc="1717952162"/>
-<taskprogress task="Connect Scan" time="1717951490" percent="34.07" remaining="664" etc="1717952154"/>
-<taskprogress task="Connect Scan" time="1717951541" percent="39.10" remaining="614" etc="1717952155"/>
-<taskprogress task="Connect Scan" time="1717951589" percent="44.03" remaining="562" etc="1717952151"/>
-<taskprogress task="Connect Scan" time="1717951640" percent="49.13" remaining="511" etc="1717952151"/>
-<taskprogress task="Connect Scan" time="1717951691" percent="54.34" remaining="458" etc="1717952148"/>
-<taskprogress task="Connect Scan" time="1717951736" percent="59.19" remaining="407" etc="1717952142"/>
-<taskprogress task="Connect Scan" time="1717951787" percent="64.31" remaining="356" etc="1717952142"/>
-<taskprogress task="Connect Scan" time="1717951835" percent="69.33" remaining="305" etc="1717952139"/>
-<taskprogress task="Connect Scan" time="1717951886" percent="74.53" remaining="253" etc="1717952139"/>
-<taskprogress task="Connect Scan" time="1717951931" percent="79.41" remaining="204" etc="1717952134"/>
-<taskprogress task="Connect Scan" time="1717951982" percent="84.62" remaining="152" etc="1717952134"/>
-<taskprogress task="Connect Scan" time="1717952033" percent="89.67" remaining="103" etc="1717952135"/>
-<taskend task="Connect Scan" time="1717952047" extrainfo="1 host timed out"/>
-<taskbegin task="Service scan" time="1717952047"/>
-<taskbegin task="NSE" time="1717952047"/>
-<taskend task="NSE" time="1717952047"/>
-<taskbegin task="NSE" time="1717952047"/>
-<taskend task="NSE" time="1717952047"/>
-<host starttime="1717951147" endtime="1717952047"><status state="up" reason="arp-response" reason_ttl="0"/>
+<taskbegin task="ARP Ping Scan" time="1717955087"/>
+<taskend task="ARP Ping Scan" time="1717955087" extrainfo="1 total hosts"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1717955087"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1717955087"/>
+<taskbegin task="Connect Scan" time="1717955087"/>
+<taskprogress task="Connect Scan" time="1717955118" percent="2.03" remaining="1499" etc="1717956616"/>
+<taskprogress task="Connect Scan" time="1717955154" percent="4.50" remaining="1421" etc="1717956574"/>
+<taskprogress task="Connect Scan" time="1717955217" percent="8.82" remaining="1345" etc="1717956561"/>
+<taskprogress task="Connect Scan" time="1717955274" percent="12.84" remaining="1270" etc="1717956543"/>
+<taskprogress task="Connect Scan" time="1717955337" percent="17.31" remaining="1194" etc="1717956531"/>
+<taskprogress task="Connect Scan" time="1717955406" percent="22.18" remaining="1120" etc="1717956525"/>
+<taskprogress task="Connect Scan" time="1717955475" percent="27.04" remaining="1047" etc="1717956522"/>
+<taskprogress task="Connect Scan" time="1717955544" percent="31.95" remaining="974" etc="1717956517"/>
+<taskprogress task="Connect Scan" time="1717955616" percent="36.99" remaining="902" etc="1717956517"/>
+<taskprogress task="Connect Scan" time="1717955685" percent="41.92" remaining="829" etc="1717956513"/>
+<taskprogress task="Connect Scan" time="1717955754" percent="46.88" remaining="756" etc="1717956510"/>
+<taskprogress task="Connect Scan" time="1717955820" percent="51.77" remaining="683" etc="1717956503"/>
+<taskprogress task="Connect Scan" time="1717955892" percent="56.85" remaining="612" etc="1717956503"/>
+<taskprogress task="Connect Scan" time="1717955967" percent="62.05" remaining="539" etc="1717956505"/>
+<taskend task="Connect Scan" time="1717955987" extrainfo="1 host timed out"/>
+<taskbegin task="Service scan" time="1717955987"/>
+<taskbegin task="NSE" time="1717955987"/>
+<taskend task="NSE" time="1717955987"/>
+<taskbegin task="NSE" time="1717955987"/>
+<taskend task="NSE" time="1717955987"/>
+<host starttime="1717955087" endtime="1717955987"><status state="up" reason="arp-response" reason_ttl="0"/>
 <address addr="192.168.0.1" addrtype="ipv4"/>
 <address addr="8C:5A:25:4C:2E:A3" addrtype="mac" vendor="Arris Group"/>
 <hostnames>
 <hostname name="_gateway" type="PTR"/>
 </hostnames>
 </host>
-<runstats><finished time="1717952047" timestr="Sun Jun  9 19:54:07 2024" elapsed="900.54" summary="Nmap done at Sun Jun  9 19:54:07 2024; 1 IP address (1 host up) scanned in 900.54 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+<runstats><finished time="1717955987" timestr="Sun Jun  9 20:59:47 2024" elapsed="900.51" summary="Nmap done at Sun Jun  9 20:59:47 2024; 1 IP address (1 host up) scanned in 900.51 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
 </runstats>
 </nmaprun>
