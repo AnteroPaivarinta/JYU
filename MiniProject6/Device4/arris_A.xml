@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.80 scan initiated Sun Jun  9 19:55:30 2024 as: nmap -T5 -v -p 1-65535 -A -sV -&#45;version-all -O -&#45;osscan-guess -oX arris_A.xml 192.168.0.1 -->
+<nmaprun scanner="nmap" args="nmap -T5 -v -p 1-65535 -A -sV -&#45;version-all -O -&#45;osscan-guess -oX arris_A.xml 192.168.0.1" start="1717952130" startstr="Sun Jun  9 19:55:30 2024" version="7.80" xmloutputversion="1.04">
+<scaninfo type="syn" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="1"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1717952130"/>
+<taskend task="NSE" time="1717952130"/>
+<taskbegin task="NSE" time="1717952130"/>
+<taskend task="NSE" time="1717952130"/>
+<taskbegin task="NSE" time="1717952130"/>
+<taskend task="NSE" time="1717952130"/>
+<taskbegin task="ARP Ping Scan" time="1717952130"/>
+<taskend task="ARP Ping Scan" time="1717952130" extrainfo="1 total hosts"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1717952130"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1717952130"/>
+<taskbegin task="SYN Stealth Scan" time="1717952130"/>
+<taskprogress task="SYN Stealth Scan" time="1717952161" percent="2.00" remaining="1516" etc="1717953676"/>
+<taskprogress task="SYN Stealth Scan" time="1717952245" percent="7.42" remaining="1436" etc="1717953680"/>
+<taskprogress task="SYN Stealth Scan" time="1717952335" percent="13.13" remaining="1357" etc="1717953692"/>
+<taskprogress task="SYN Stealth Scan" time="1717952410" percent="17.97" remaining="1279" etc="1717953688"/>
+<taskprogress task="SYN Stealth Scan" time="1717952494" percent="23.32" remaining="1198" etc="1717953691"/>
+<taskprogress task="SYN Stealth Scan" time="1717952584" percent="28.90" remaining="1117" etc="1717953701"/>
+<taskprogress task="SYN Stealth Scan" time="1717952656" percent="33.68" remaining="1036" etc="1717953692"/>
+<taskprogress task="SYN Stealth Scan" time="1717952731" percent="38.57" remaining="958" etc="1717953688"/>
+<taskprogress task="SYN Stealth Scan" time="1717952812" percent="43.73" remaining="878" etc="1717953689"/>
+<taskprogress task="SYN Stealth Scan" time="1717952893" percent="48.96" remaining="796" etc="1717953688"/>
+<taskprogress task="SYN Stealth Scan" time="1717952968" percent="53.98" remaining="715" etc="1717953682"/>
+<taskend task="SYN Stealth Scan" time="1717953030" extrainfo="1 host timed out"/>
+<taskbegin task="Service scan" time="1717953030"/>
+<taskbegin task="NSE" time="1717953030"/>
+<taskend task="NSE" time="1717953030"/>
+<taskbegin task="NSE" time="1717953030"/>
+<taskend task="NSE" time="1717953030"/>
+<taskbegin task="NSE" time="1717953030"/>
+<taskend task="NSE" time="1717953030"/>
+<host starttime="1717952130" endtime="1717953030"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="192.168.0.1" addrtype="ipv4"/>
+<address addr="8C:5A:25:4C:2E:A3" addrtype="mac" vendor="Arris Group"/>
+<hostnames>
+<hostname name="_gateway" type="PTR"/>
+</hostnames>
+</host>
+<taskbegin task="NSE" time="1717953030"/>
+<taskend task="NSE" time="1717953030"/>
+<taskbegin task="NSE" time="1717953030"/>
+<taskend task="NSE" time="1717953030"/>
+<taskbegin task="NSE" time="1717953030"/>
+<taskend task="NSE" time="1717953030"/>
+<runstats><finished time="1717953030" timestr="Sun Jun  9 20:10:30 2024" elapsed="900.61" summary="Nmap done at Sun Jun  9 20:10:30 2024; 1 IP address (1 host up) scanned in 900.61 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

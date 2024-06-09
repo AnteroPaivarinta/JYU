@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.80 scan initiated Sun Jun  9 19:11:06 2024 as: nmap -v -p 1-65535 -T5 -sUV -&#45;host-timeout 60m -&#45;min-rtt-timeout 100ms -&#45;max-rtt-timeout 500ms -&#45;data-length 50 -&#45;version-intensity 2 -&#45;osscan-guess -oX arris_udp-only.xml 192.168.0.1 -->
+<nmaprun scanner="nmap" args="nmap -v -p 1-65535 -T5 -sUV -&#45;host-timeout 60m -&#45;min-rtt-timeout 100ms -&#45;max-rtt-timeout 500ms -&#45;data-length 50 -&#45;version-intensity 2 -&#45;osscan-guess -oX arris_udp-only.xml 192.168.0.1" start="1717949466" startstr="Sun Jun  9 19:11:06 2024" version="7.80" xmloutputversion="1.04">
+<scaninfo type="udp" protocol="udp" numservices="65535" services="1-65535"/>
+<verbose level="1"/>
+<debugging level="0"/>
+<taskbegin task="ARP Ping Scan" time="1717949467"/>
+<taskend task="ARP Ping Scan" time="1717949467" extrainfo="1 total hosts"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1717949467"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1717949467"/>
+<taskbegin task="UDP Scan" time="1717949467"/>
+<taskprogress task="UDP Scan" time="1717949498" percent="1.80" remaining="1694" etc="1717951191"/>
+<taskprogress task="UDP Scan" time="1717949528" percent="2.13" remaining="2802" etc="1717952329"/>
+<taskprogress task="UDP Scan" time="1717949558" percent="2.45" remaining="3631" etc="1717953189"/>
+<taskprogress task="UDP Scan" time="1717949588" percent="2.78" remaining="4238" etc="1717953826"/>
+<taskprogress task="UDP Scan" time="1717949618" percent="3.11" remaining="4705" etc="1717954323"/>
+<taskprogress task="UDP Scan" time="1717949648" percent="3.44" remaining="5077" etc="1717954724"/>
+<taskprogress task="UDP Scan" time="1717949678" percent="3.78" remaining="5377" etc="1717955055"/>
+<taskprogress task="UDP Scan" time="1717949714" percent="4.18" remaining="5668" etc="1717955381"/>
+<taskprogress task="UDP Scan" time="1717949759" percent="4.67" remaining="5964" etc="1717955722"/>
+<taskprogress task="UDP Scan" time="1717949828" percent="5.44" remaining="6281" etc="1717956109"/>
+<taskprogress task="UDP Scan" time="1717949936" percent="6.62" remaining="6615" etc="1717956551"/>
+<taskprogress task="UDP Scan" time="1717950215" percent="9.69" remaining="6970" etc="1717957185"/>
+<taskprogress task="UDP Scan" time="1717951397" percent="22.67" remaining="6583" etc="1717957980"/>
+<taskprogress task="UDP Scan" time="1717951928" percent="28.56" remaining="6158" etc="1717958085"/>
+<taskprogress task="UDP Scan" time="1717952444" percent="34.21" remaining="5726" etc="1717958169"/>
+<taskprogress task="UDP Scan" time="1717952930" percent="39.57" remaining="5290" etc="1717958219"/>
+<taskend task="UDP Scan" time="1717953067" extrainfo="1 host timed out"/>
+<taskbegin task="Service scan" time="1717953067"/>
+<taskbegin task="NSE" time="1717953067"/>
+<taskend task="NSE" time="1717953067"/>
+<taskbegin task="NSE" time="1717953067"/>
+<taskend task="NSE" time="1717953067"/>
+<host starttime="1717949467" endtime="1717953067"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="192.168.0.1" addrtype="ipv4"/>
+<address addr="8C:5A:25:4C:2E:A3" addrtype="mac" vendor="Arris Group"/>
+<hostnames>
+<hostname name="_gateway" type="PTR"/>
+</hostnames>
+</host>
+<runstats><finished time="1717953067" timestr="Sun Jun  9 20:11:07 2024" elapsed="3600.45" summary="Nmap done at Sun Jun  9 20:11:07 2024; 1 IP address (1 host up) scanned in 3600.45 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
